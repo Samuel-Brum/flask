@@ -174,7 +174,7 @@ class MethodView(View):
 
             for key in http_method_funcs:
                 if hasattr(cls, key):
-                    methods.add(key.upper())
+                    methods.add(key.lower())
 
             if methods:
                 cls.methods = methods
